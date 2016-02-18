@@ -1,0 +1,8 @@
+# Site settings
+gems: [jekyll-paginate]
+title: Ship
+description: > # this means to ignore newlines until "baseurl:"
+  SHIP!
+
+# Build settings
+markdown: kramdown
