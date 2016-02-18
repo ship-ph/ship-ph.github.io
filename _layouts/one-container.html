@@ -1,0 +1,27 @@
+---
+layout: default
+---
+
+<div class="container container-margin">
+    <div class="row">
+        <div class="col-xs-12 breadcrumbs pull-right">
+            <ul class="breadcrumbs-list">
+                <li class="breadcrumbs-label">You are here:</li>
+                <li><a href="/">Home</a><i class="fa fa-angle-right"></i></li>
+                <li class="current">{{ page.title | capitalize }}</li>
+            </ul>
+        </div>
+        <div class="col-lg-12">
+
+            <div  class="col-md-12 Container-2">
+                <div class="gray-bg clearfix">
+
+                    <h3 class="left-h3">{{ page.title | upcase }}</h3>
+
+                    {{ content }}
+                </div>
+            </div>
+        </div>
+
+    </div>
+</div>
