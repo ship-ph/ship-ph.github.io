@@ -1,0 +1,199 @@
+---
+layout: default
+---
+
+<div class="container container-margin">
+    <div class="row">
+        <div class="col-xs-12 breadcrumbs pull-right">
+            <ul class="breadcrumbs-list">
+                <li class="breadcrumbs-label">You are here:</li>
+                <li><a href="index.html">Home</a><i class="fa fa-angle-right"></i></li>
+                <li class="current">{{ page.title | capitalize }}</li>
+            </ul>
+        </div>
+
+        <div class="col-lg-3">
+            <div class="col-lg-12 gray-bg" id="coursesButton">
+                <h3 class="left-h3">{{ page.title | upcase }}</h3>
+                <div class="panel-group" id="accordion">
+                    <div class="panel coursesChoices">
+                        <a id="cruiseTraining" class="courses-button collapse-btn new-courses-panel-button " data-display="courseChoices" data-parent="#accordion" data-toggle="collapse" href="#cruiseTrainingCollapse" data-href="#newCruiseTrainingTemplate">
+                            <div class="panel-heading">
+                                Cruise Ship Training
+                            </div>
+                        </a>
+                        <div id="cruiseTrainingCollapse" class="collapse coursesChoicesBackground">
+                        </div>
+                    </div>
+                    <div class="panel coursesChoices">
+                        <a id="modularEnhancementCourses" class="courses-button collapse-btn new-courses-panel-button" data-display="modularEnhancementCoursesCollapse" data-toggle="collapse" data-parent="#accordion" href="#modularEnhancementCollapse" data-href="#modularEnhancementCoursesTemplate">
+                            <div class="panel-heading">
+                                MODULAR ENHANCEMENT COURSES FOR COOKS / CHEFS
+                            </div>
+                        </a>
+                        <div id="modularEnhancementCollapse" class="collapse coursesChoicesBackground">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-lg-9 col-md-12">
+            <div class="gray-bg clearfix" id="coursesResult">
+                <div class="course-template" id="courses-description">
+                    <h3 class="left-h3">COURSES OFFERED</h3>
+                    <p>SHIP offers courses that are competency based. This means that each course follows a standard structure to ensure that the trainee is able to perform his task creditably according to set industry standards.</p>
+                    <p>The elements applied to the courses we offer are the following: course title and purpose, nominal duration, level of certification, summary of learning outcomes, assessment criteria, contents, training delivery and assessment method.</p>
+                    <p>All courses offered are TESDA accredited (Technical Education and Skills Development Authority, a governing body that oversees vocational courses throughout the country).</p>
+                    <p>At the end of each course, the trainee is issued a certificate leading to a national assessment. The end product is a national competency certificate.</p>
+                </div>
+            </div>
+            <form action="http://ship-app.aestrea.com/course/addMultipleCourse" method="post" name="courseForm" id="courseForm" >
+                <div class="gray-bg clearfix" id="newCruiseTrainingTemplate">
+                    <div>
+                        <h3 class="left-h3">Cruise Ship Skills Improvement Training</h3>
+                        <p>SHIP offers skills improvement training for those who are planning to work in the hotel department onboard international cruise lines. The courses are designed to meet TESDA competency based requirements and at the same time meet international cruise standards. The trainers are seafarers who are well experienced in their respective fields. The facilities simulate those that can be found onboard international cruise lines.</p>
+                    </div>
+
+                    <div id="list-course-cruise" class="content scaffold-list" role="main">
+
+
+                        <div class="course-table-scroll">
+                            <table class="course-table table table-condensed table-bordered">
+                                <thead>
+                                <th class="td-checkbox-center">Select</th>
+                                <th>Name</th>
+
+                                <th>TVET Number</th>
+
+
+                                </thead>
+                                <tbody>
+                                {% assign courses = site.courses | sort: 'rank' %}
+                                {% for course in courses %}
+                                {% if course.category == 'training' %}
+                                <tr>
+                                    <td class="td-checkbox-center">
+                                        <input type="hidden" name="_checkbox-course" /><input type="checkbox" name="checkbox-course" value="1" class="checkbox-course" id="checkbox-course"  />
+                                    </td>
+                                    <td><a href="{{ course.url }}" class="text-decoration-none course-item">{{ course.title }}</a></td>
+
+                                    <td>{{ course.tvet }}</td>
+
+                                </tr>
+                                {% endif %}
+                                {% endfor %}
+                                </tbody>
+                            </table>
+                        </div>
+                        <button type="submit" id="save_value" class="margin-10 pull-right btn  btn-success">
+                            Inquire Courses
+                        </button>
+                        <h5>*Check course box to select</h5>
+                    </div>
+                </div>
+
+                <div class="gray-bg clearfix" id="modularEnhancementCoursesTemplate">
+                    <div>
+                        <h3 class="left-h3">
+                            Modular Enhancement Courses For Cooks / Chefs
+                        </h3>
+                        <p>This modular enhancement course is designed for MLC Certified Cooks to build on their foundations in food preparation and production. It includes a more in-depth study of cooking principles and techniques. The trainees will have intensive lectures and practical activities in recipes comprehension, menu planning and nutrition, victual management, and in-depth cooking practices. Trainees can enroll one module at a time and can receive a training completion certificate after each module.</p>
+                    </div>
+                    <div id="list-course-modular" class="content scaffold-list" role="main">
+
+
+                        <div class="course-table-scroll">
+                            <table class="course-table table table-condensed table-bordered">
+                                <thead>
+                                <th class="td-checkbox-center">Select</th>
+                                <th>Name</th>
+
+                                </thead>
+                                <tbody>
+
+                                <tr>
+                                    <td class="td-checkbox-center">
+
+                                        <input type="hidden" name="_checkbox-course" /><input type="checkbox" name="checkbox-course" value="10" class="checkbox-course" id="checkbox-course"  />
+
+                                    </td>
+                                    <td><a href="courses/Recipes_Comprehension.html" class="text-decoration-none course-item">Recipes Comprehension</a></td>
+
+                                </tr>
+
+                                <tr>
+                                    <td class="td-checkbox-center">
+
+                                        <input type="hidden" name="_checkbox-course" /><input type="checkbox" name="checkbox-course" value="11" class="checkbox-course" id="checkbox-course"  />
+
+                                    </td>
+                                    <td><a href="courses/Menu_Planning_and_Nutrition.html" class="text-decoration-none course-item">Menu Planning and Nutrition</a></td>
+
+                                </tr>
+
+                                <tr>
+                                    <td class="td-checkbox-center">
+
+                                        <input type="hidden" name="_checkbox-course" /><input type="checkbox" name="checkbox-course" value="12" class="checkbox-course" id="checkbox-course"  />
+
+                                    </td>
+                                    <td><a href="courses/Victual_Management.html" class="text-decoration-none course-item">Victual Management</a></td>
+
+                                </tr>
+
+                                <tr>
+                                    <td class="td-checkbox-center">
+
+                                        <input type="hidden" name="_checkbox-course" /><input type="checkbox" name="checkbox-course" value="13" class="checkbox-course" id="checkbox-course"  />
+
+                                    </td>
+                                    <td><a href="courses.html" class="text-decoration-none course-item">In-depth Cooking Practices A</a></td>
+
+                                </tr>
+
+                                <tr>
+                                    <td class="td-checkbox-center">
+
+                                        <input type="hidden" name="_checkbox-course" /><input type="checkbox" name="checkbox-course" value="14" class="checkbox-course" id="checkbox-course"  />
+
+                                    </td>
+                                    <td><a href="courses.html" class="text-decoration-none course-item">In-depth Cooking Practices B</a></td>
+
+                                </tr>
+
+                                <tr>
+                                    <td class="td-checkbox-center">
+
+                                        <input type="hidden" name="_checkbox-course" /><input type="checkbox" name="checkbox-course" value="15" class="checkbox-course" id="checkbox-course"  />
+
+                                    </td>
+                                    <td><a href="courses/Bakery_and_Pastry_Products.html" class="text-decoration-none course-item">Bakery and Pastry Products</a></td>
+
+                                </tr>
+
+                                <tr>
+                                    <td class="td-checkbox-center">
+
+                                        <input type="hidden" name="_checkbox-course" /><input type="checkbox" name="checkbox-course" value="16" class="checkbox-course" id="checkbox-course"  />
+
+                                    </td>
+                                    <td><a href="courses/Buffet_Production_%26_Dining_Service.html" class="text-decoration-none course-item">Buffet Production &amp; Dining Service</a></td>
+
+                                </tr>
+
+                                </tbody>
+                            </table>
+                        </div>
+                        <button type="submit" id="save_value" class="margin-10 pull-right btn  btn-success">
+                            Inquire Courses
+                        </button>
+                        <h5>*Check course box to select</h5>
+                    </div>
+                </div>
+
+
+            </form>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,58 @@
+---
+layout: default
+---
+
+<div class="container container-margin">
+    <div class="row">
+        <div class="col-xs-12 breadcrumbs pull-right">
+            <ul class="breadcrumbs-list">
+                <li class="breadcrumbs-label">You are here:</li>
+                <li><a href="/">Home</a><i class="fa fa-angle-right"></i></li>
+                <li class="current">Show Course</li>
+            </ul>
+        </div>
+        <div class="col-lg-12">
+            <div class="gray-bg clearfix">
+                <div class="featured pull-right">
+                    <a href="/course/featured/1?isFeatured=true">
+                        <i class="fa fa-star{% unless page.feature_image %}-o{% endunless %}"></i>
+                    </a>
+                </div>
+                <h3 class="left-h3">Course</h3>
+                <div class="row">
+                    {% if page.feature_image %}
+                    <div class="col-md-5 text-center">
+                        <div id="image-carousel" class="carousel slide" data-ride="carousel" data-interval="false">
+                            <!-- Wrapper for slides -->
+                            <div class="carousel-inner">
+                                <div class="item active">
+                                    <img class="img-responsive margin-auto course-image" src="{{ page.feature_image }}">
+                                </div>
+
+                            </div>
+
+                        </div>
+                    </div>
+                    <div class="col-md-7">
+                        <h3>{{ page.title }}</h3>
+                        <div>
+                            <h5>TVET Number: {{ page.tvet }}</h5>
+                        </div>
+                        <h5><span id="description-label" class="property-label">Description</span>:</h5>
+                        {{ content }}
+                    </div>
+                    {% else %}
+                    <div class="col-md-12">
+                        <h3>{{ page.title }}</h3>
+                        <div>
+                            <h5>TVET Number: {{ page.tvet }}</h5>
+                        </div>
+                        <h5><span id="description-label" class="property-label">Description</span>:</h5>
+                        {{ content }}
+                    </div>
+                    {% endif %}
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
