@@ -2,7 +2,7 @@
 layout: course
 rank: 9
 title: "F & B SERVICES NCII"
-category: training
+categories: training
 tvet: "NTR0413050061"
 feature_image: /image/displayImage/19.html
 ---

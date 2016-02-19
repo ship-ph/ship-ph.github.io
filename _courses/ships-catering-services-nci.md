@@ -2,7 +2,7 @@
 layout: course
 rank: 5
 title: "SHIP'S CATERING SERVICES NCI"
-category: training
+categories: training
 tvet: "WTR201413051018"
 feature_image: /image/displayImage/16.html
 ---

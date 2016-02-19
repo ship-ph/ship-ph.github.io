@@ -2,7 +2,7 @@
 layout: course
 rank: 2
 title: "ENGLISH FOR SEAFARERS 1"
-category: training
+categories: training
 tvet: "NTR0713051086"
 ---
 

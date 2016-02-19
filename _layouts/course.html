@@ -44,10 +44,12 @@ layout: default
                     {% else %}
                     <div class="col-md-12">
                         <h3>{{ page.title }}</h3>
+                        {% unless page.category == 'enhancement' %}
                         <div>
                             <h5>TVET Number: {{ page.tvet }}</h5>
                         </div>
                         <h5><span id="description-label" class="property-label">Description</span>:</h5>
+                        {% endunless %}
                         {{ content }}
                     </div>
                     {% endif %}
@@ -56,3 +58,4 @@ layout: default
         </div>
     </div>
 </div>
+<input type="hidden" name="page-index" class="page-index" value="2" id="page-index">

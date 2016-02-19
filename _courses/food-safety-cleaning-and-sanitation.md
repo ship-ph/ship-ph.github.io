@@ -2,7 +2,7 @@
 layout: course
 rank: 3
 title: "FOOD SAFETY CLEANING AND SANITATION"
-category: training
+categories: training
 tvet: "NTR0713051085"
 feature_image: /image/displayImage/14.html
 ---

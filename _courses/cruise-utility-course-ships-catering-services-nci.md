@@ -2,7 +2,7 @@
 layout: course
 rank: 1
 title: "CRUISE UTILITY COURSE (SHIP'S CATERING SERVICES NCI)"
-category: training
+categories: training
 tvet: "WTR201413051018"
 ---
 

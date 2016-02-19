@@ -2,7 +2,7 @@
 layout: course
 rank: 7
 title: "BREAD & PASTRY PRODUCTION NCII"
-category: training
+categories: training
 tvet: "WTR201413052142"
 feature_image: /image/displayImage/17.html
 ---

@@ -11,4 +11,4 @@ markdown: kramdown
 collections:
     courses:
         output: true
-        permalink: /courses/:title
+        permalink: /courses/:categories/:title

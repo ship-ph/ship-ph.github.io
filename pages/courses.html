@@ -3,3 +3,102 @@ layout: with-sidebar
 permalink: /courses/
 title: courses
 ---
+
+<div class="col-lg-9 col-md-12">
+    <div class="gray-bg clearfix" id="coursesResult">
+        <div class="course-template" id="courses-description">
+            <h3 class="left-h3">COURSES OFFERED</h3>
+            <p>SHIP offers courses that are competency based. This means that each course follows a standard structure to ensure that the trainee is able to perform his task creditably according to set industry standards.</p>
+            <p>The elements applied to the courses we offer are the following: course title and purpose, nominal duration, level of certification, summary of learning outcomes, assessment criteria, contents, training delivery and assessment method.</p>
+            <p>All courses offered are TESDA accredited (Technical Education and Skills Development Authority, a governing body that oversees vocational courses throughout the country).</p>
+            <p>At the end of each course, the trainee is issued a certificate leading to a national assessment. The end product is a national competency certificate.</p>
+        </div>
+    </div>
+    <form action="http://ship-app.aestrea.com/course/addMultipleCourse" method="post" name="courseForm" id="courseForm" >
+        <div class="gray-bg clearfix" id="newCruiseTrainingTemplate">
+            <div>
+                <h3 class="left-h3">Cruise Ship Skills Improvement Training</h3>
+                <p>SHIP offers skills improvement training for those who are planning to work in the hotel department onboard international cruise lines. The courses are designed to meet TESDA competency based requirements and at the same time meet international cruise standards. The trainers are seafarers who are well experienced in their respective fields. The facilities simulate those that can be found onboard international cruise lines.</p>
+            </div>
+
+            <div id="list-course-cruise" class="content scaffold-list" role="main">
+
+
+                <div class="course-table-scroll">
+                    <table class="course-table table table-condensed table-bordered">
+                        <thead>
+                        <th class="td-checkbox-center">Select</th>
+                        <th>Name</th>
+
+                        <th>TVET Number</th>
+
+
+                        </thead>
+                        <tbody>
+                        {% assign courses = site.courses | sort: 'rank' %}
+                        {% for course in courses %}
+                        {% if course.categories contains 'training' %}
+                        <tr>
+                            <td class="td-checkbox-center">
+                                <input type="hidden" name="_checkbox-course" /><input type="checkbox" name="checkbox-course" value="1" class="checkbox-course" id="checkbox-course"  />
+                            </td>
+                            <td><a href="{{ course.url }}" class="text-decoration-none course-item">{{ course.title }}</a></td>
+
+                            <td>{{ course.tvet }}</td>
+
+                        </tr>
+                        {% endif %}
+                        {% endfor %}
+                        </tbody>
+                    </table>
+                </div>
+                <button type="submit" id="save_value" class="margin-10 pull-right btn  btn-success">
+                    Inquire Courses
+                </button>
+                <h5>*Check course box to select</h5>
+            </div>
+        </div>
+
+        <div class="gray-bg clearfix" id="modularEnhancementCoursesTemplate">
+            <div>
+                <h3 class="left-h3">
+                    Modular Enhancement Courses For Cooks / Chefs
+                </h3>
+                <p>This modular enhancement course is designed for MLC Certified Cooks to build on their foundations in food preparation and production. It includes a more in-depth study of cooking principles and techniques. The trainees will have intensive lectures and practical activities in recipes comprehension, menu planning and nutrition, victual management, and in-depth cooking practices. Trainees can enroll one module at a time and can receive a training completion certificate after each module.</p>
+            </div>
+            <div id="list-course-modular" class="content scaffold-list" role="main">
+
+
+                <div class="course-table-scroll">
+                    <table class="course-table table table-condensed table-bordered">
+                        <thead>
+                        <th class="td-checkbox-center">Select</th>
+                        <th>Name</th>
+
+                        </thead>
+                        <tbody>
+                        {% assign courses = site.courses | sort: 'rank' %}
+                        {% for course in courses %}
+                        {% if course.categories contains 'enhancement' %}
+                        <tr>
+                            <td class="td-checkbox-center">
+                                <input type="hidden" name="_checkbox-course" /><input type="checkbox" name="checkbox-course" value="10" class="checkbox-course" id="checkbox-course"  />
+                            </td>
+                            <td><a href="{{ course.url }}" class="text-decoration-none course-item">{{ course.title }}</a></td>
+                        </tr>
+                        {% endif %}
+                        {% endfor %}
+                        </tbody>
+                    </table>
+                </div>
+                <button type="submit" id="save_value" class="margin-10 pull-right btn  btn-success">
+                    Inquire Courses
+                </button>
+                <h5>*Check course box to select</h5>
+            </div>
+        </div>
+
+
+    </form>
+</div>
+<input type="hidden" name="page-index" class="page-index" value="2" id="page-index">

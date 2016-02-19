@@ -2,7 +2,7 @@
 layout: course
 rank: 6
 title: "COOKERY NCII"
-category: training
+categories: training
 tvet: "WTR201413052141"
 ---
 

@@ -2,7 +2,7 @@
 layout: course
 rank: 8
 title: "HOUSEKEEPING NCII"
-category: training
+categories: training
 tvet: "NTR0413050061"
 feature_image: /image/displayImage/18.html
 ---
