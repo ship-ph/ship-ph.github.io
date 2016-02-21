@@ -1,0 +1,42 @@
+---
+layout: default
+---
+<div class="container container-margin" id="trainersPage">
+    <div class="row">
+        <div class="col-xs-12 breadcrumbs pull-right">
+            <ul class="breadcrumbs-list">
+                <li class="breadcrumbs-label">You are here:</li>
+                <li><a href="index.html">Home</a><i class="fa fa-angle-right"></i></li>
+                <li class="current">Trainers</li>
+            </ul>
+        </div>
+        <div class="col-lg-3 col-md-4" id="trainersSidebarButton">
+            <div  class="col-lg-12" id="pageWrap">
+                <div id="mainSidebar">
+                    <div class="gray-bg">
+                        <h3 class="left-h3"> TRAINERS </h3>
+                        <div class="panel-group" id="accordion">
+                            <div class="panel sidebar-buttons" id="our-trainers-side-nav">
+                                <a href="/pages/trainer/showOurTrainers.html" onclick="jQuery.ajax({type:'GET', url:'/trainer/showOurTrainers.html',success:function(data,textStatus){jQuery('#trainers').html(data);},error:function(XMLHttpRequest,textStatus,errorThrown){}});return false;" class="trainers-button">
+                                    <div class="panel-heading">
+                                        OUR TRAINERS
+                                    </div>
+                                </a>
+                            </div>
+
+                            <div class="panel sidebar-buttons">
+                                <a href="/pages/trainer/showInhouseTrainers.html" onclick="jQuery.ajax({type:'GET', url:'/trainer/showInhouseTrainers.html',success:function(data,textStatus){jQuery('#trainers').html(data);},error:function(XMLHttpRequest,textStatus,errorThrown){}});return false;" class="trainers-button">
+                                    <div class="panel-heading">
+                                        IN-HOUSE TRAINERS
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        {{ content }}
+    </div>
+</div>
