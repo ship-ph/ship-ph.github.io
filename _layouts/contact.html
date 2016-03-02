@@ -1,0 +1,129 @@
+---
+layout: default
+---
+
+<div class="container container-margin">
+    <div class="row">
+        <div class="col-xs-12 breadcrumbs pull-right">
+            <ul class="breadcrumbs-list">
+                <li class="breadcrumbs-label">You are here:</li>
+                <li><a href="index.html">Home</a><i class="fa fa-angle-right"></i></li>
+                <li class="current">{{ page.title }}</li>
+            </ul>
+        </div>
+    </div>
+    <div id="create-contactInfo" class="content scaffold-create" role="main">
+        <div class="row">
+            <div class="col-lg-7 col-md-7">
+                <div class="gray-bg">
+                    <h3 class="left-h3">CONTACT US</h3>
+                    <form accept-charset="UTF-8" action="https://zapier.com/hooks/catch/2rwc29/" method="post" class="admin-btn-spinner">
+                        <fieldset class="form">
+                            <input type="hidden" name="utf8" value="✓">
+                            <div class="fieldcontain  form-group required ">
+                                <label for="firstName">
+                                    First Name
+                                    <span class="required-indicator">*</span>
+                                </label>
+                                <input type="text" name="firstName" required="" class="form-control" value=""
+                                       id="firstName"/>
+                            </div>
+
+                            <div class="fieldcontain  form-group required ">
+                                <label for="lastName">
+                                    Last Name
+                                    <span class="required-indicator">*</span>
+                                </label>
+                                <input type="text" name="lastName" required="" class="form-control" value=""
+                                       id="lastName"/>
+                            </div>
+
+                            <div class="fieldcontain  form-group required">
+                                <label for="contactNo">
+                                    Contact Number
+                                    <span class="required-indicator">*</span>
+                                </label>
+                                <input type="text" name="contactNo" class="form-control" required="" value=""
+                                       id="contactNo"/>
+                            </div>
+
+                            <div class="fieldcontain  form-group required">
+                                <label for="address">
+                                    Address
+                                    <span class="required-indicator">*</span>
+                                </label>
+                                <textarea name="address" cols="40" rows="5" class="form-control" required=""
+                                          maxlength="1000" id="address"></textarea>
+                            </div>
+
+                            <div class="fieldcontain  form-group required">
+                                <label for="email">
+                                    Email
+                                    <span class="required-indicator">*</span>
+                                </label>
+                                <input type="email" name="email" required="" class="form-control" value="" id="email"/>
+                            </div>
+
+                            <div class="fieldcontain  form-group required">
+                                <label for="message">
+                                    Message
+                                    <span class="required-indicator">*</span>
+                                </label>
+                                <textarea name="message" required="" class="form-control" cols="40" rows="5"
+                                          maxlength="10000" id="message"></textarea>
+                            </div>
+
+                            <input type="submit" name="create" class="admin-button save btn btn-primary"
+                                   value="SUBMIT" id="create"/>
+                        </fieldset>
+
+                    </form>
+                    </form>
+                    <div class="clearfix"></div>
+                </div>
+            </div>
+            <div class="col-lg-5 col-md-5">
+                <div class="gray-bg">
+                    <h3 class="left-h3">WHERE TO FIND US</h3>
+                    <iframe width="100%" height="350px" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"
+                            src="https://maps.google.com/maps?f=q&amp;source=embed&amp;hl=en&amp;geocode=&amp;q=Ship+Hotel+Cruise+Institute+Of+The+Phils.+Inc.,+Paseo+de+Roxas,+Makati+City,+Metro+Manila,+Philippines&amp;aq=0&amp;oq=ship+hotel+cruise+in&amp;sll=30.675715,-95.712891&amp;sspn=43.574208,58.623047&amp;ie=UTF8&amp;hq=Ship+Hotel+Cruise+Institute+Of+The+Phils.+Inc.,+Paseo+de+Roxas,&amp;hnear=Makati,+Metro+Manila,+Philippines&amp;t=m&amp;ll=14.558341,121.025852&amp;spn=0.003635,0.00456&amp;output=embed"></iframe>
+                    <br/>
+                    <small><a target="_blank"
+                              href="https://maps.google.com/maps?f=q&amp;source=embed&amp;hl=en&amp;geocode=&amp;q=Ship+Hotel+Cruise+Institute+Of+The+Phils.+Inc.,+Paseo+de+Roxas,+Makati+City,+Metro+Manila,+Philippines&amp;aq=0&amp;oq=ship+hotel+cruise+in&amp;sll=30.675715,-95.712891&amp;sspn=43.574208,58.623047&amp;ie=UTF8&amp;hq=Ship+Hotel+Cruise+Institute+Of+The+Phils.+Inc.,+Paseo+de+Roxas,&amp;hnear=Makati,+Metro+Manila,+Philippines&amp;t=m&amp;ll=14.558341,121.025852&amp;spn=0.003635,0.00456"
+                              style="color:#0000FF;text-align:left">View Larger Map</a></small>
+                    <hr/>
+                    <label>Telephone:</label>
+
+                    <p>+63 (2) 892-8215</p>
+                    <label>Cellphone:</label>
+
+                    <p>0927-5727447(GLOBE)</p>
+
+                    <p>0939-4435505(SMART)</p>
+                    <label>Fax No.:</label>
+
+                    <p>893-5872</p>
+                    <label>Address:</label>
+
+                    <p>
+                        <span class="ship-address">22nd Floor (Penthouse) BDO Plaza</span>
+                        <span class="ship-address">8737 Paseo De Roxas, Makati City</span>
+                        <span class="ship-address">Metro Manila, 1209</span>
+                        <span class="ship-address">Philippines</span>
+                    </p>
+                    <label>Email:</label>
+
+                    <p><i class="fa fa-envelope"></i> info@ship.com.ph</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<input type="hidden" name="page-index" class="page-index" value="9" id="page-index"/>
+<script>
+    $( document ).ready(function() {
+        if(getUrlParameter('email')){
+            $('#email').val(getUrlParameter('email'));;
+        }
+    });
+</script>
