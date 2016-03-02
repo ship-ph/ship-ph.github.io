@@ -34,7 +34,23 @@
                 }
                 return array;
             };
-            var test = getUrlParameter('checkbox-course[]');
+
+            $('form').on('submit', function(e) {
+                e.preventDefault();
+                var data = $("form :input").serializeArray();
+
+                var actionURL = $(e.currentTarget).attr('action');
+
+                $.ajax({
+                    type: "POST",
+                    url: actionURL,
+                    // the name of the callback parameter, as specified by the YQL service
+                    data: $.param(data),
+                    success: function() {
+                        window.location = '/thankyou';
+                    }
+                })
+            });
         </script>
     </body>
 
