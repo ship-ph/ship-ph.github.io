@@ -14,7 +14,7 @@ title: courses
             <p>At the end of each course, the trainee is issued a certificate leading to a national assessment. The end product is a national competency certificate.</p>
         </div>
     </div>
-    <form action="http://ship-app.aestrea.com/course/addMultipleCourse" method="post" name="courseForm" id="courseForm" >
+    <form action="/courses.bak/inquire" method="get" name="courseForm" id="courseForm" >
         <div class="gray-bg clearfix" id="newCruiseTrainingTemplate">
             <div>
                 <h3 class="left-h3">Cruise Ship Skills Improvement Training</h3>
@@ -40,12 +40,11 @@ title: courses
                         {% if course.categories contains 'training' %}
                         <tr>
                             <td class="td-checkbox-center">
-                                <input type="hidden" name="_checkbox-course" /><input type="checkbox" name="checkbox-course" value="1" class="checkbox-course" id="checkbox-course"  />
+                                <input type="checkbox" name="courses" value="{{ course.title | url_encode}}" class="checkbox-course" id="checkbox-course"  />
                             </td>
                             <td><a href="{{ course.url }}" class="text-decoration-none course-item">{{ course.title }}</a></td>
 
                             <td>{{ course.tvet }}</td>
-
                         </tr>
                         {% endif %}
                         {% endfor %}
@@ -82,7 +81,7 @@ title: courses
                         {% if course.categories contains 'enhancement' %}
                         <tr>
                             <td class="td-checkbox-center">
-                                <input type="hidden" name="_checkbox-course" /><input type="checkbox" name="checkbox-course" value="10" class="checkbox-course" id="checkbox-course"  />
+                                <input type="checkbox" name="courses" value="{{ course.title | url_encode}}" class="checkbox-course" id="checkbox-course"  />
                             </td>
                             <td><a href="{{ course.url }}" class="text-decoration-none course-item">{{ course.title }}</a></td>
                         </tr>
