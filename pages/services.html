@@ -1,0 +1,91 @@
+---
+layout: default
+permalink: /services/
+---
+
+<div class="container container-margin" id="servicesPage">
+    <div class="row">
+        <div class="col-xs-12 breadcrumbs pull-right">
+            <ul class="breadcrumbs-list">
+                <li class="breadcrumbs-label">You are here:</li>
+                <li><a href="index.html">Home</a><i class="fa fa-angle-right"></i></li>
+                <li class="current">Services</li>
+            </ul>
+        </div>
+        <div class="col-lg-3 col-md-4">
+            <div class="col-lg-12 gray-bg" id="servicesButton">
+                <h3 class="left-h3">SERVICES</h3>
+                <div class="panel-group" id="accordion">
+                    <div class="panel servicesChoices">
+                        <a href="index/showCommodoresTable.html" onclick="jQuery.ajax({type:'POST', url:'/index/showCommodoresTable',success:function(data,textStatus){jQuery('#diningAndEvents').html(data);},error:function(XMLHttpRequest,textStatus,errorThrown){}});return false;" class="services-button collapse-btn">
+                            <div class="panel-heading">
+                                The Commodore’s Table
+                            </div>
+                        </a>
+                        <div id="diningEventsSidebarCollapse" class="collapse coursesChoicesBackground"></div>
+                    </div>
+
+                    <div class="panel servicesChoices">
+                        <a href="index/showTeamBuilding.html" onclick="jQuery.ajax({type:'POST', url:'/index/showTeamBuilding',success:function(data,textStatus){jQuery('#diningAndEvents').html(data);},error:function(XMLHttpRequest,textStatus,errorThrown){}});return false;" class="services-button collapse-btn">
+                            <div class="panel-heading">
+                                Corporate Culinary Team Building
+                            </div>
+                        </a>
+                        <div id="teamBuildingSidebarCollapse" class="collapse coursesChoicesBackground"></div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+        <div class="col-lg-9 col-md-8">
+            <div id="diningAndEvents" class="catering-service">
+
+                <div class="col-md-12">
+                    <div class="gray-bg clearfix">
+                        <h3 class="left-h3">The Commodore’s Table</h3>
+                        <p>
+                            The Commodore’s Table started as the practical training venue for SHIP trainees and had since
+                            expanded into a full service restaurant that offers breakfast, lunch and snacks to offices in the
+                            building and to walk-in guests. Through the years, it had slowly added new services such as
+                            lunch boxes delivery, outside catering, in-house catering and social functions like birthdays and
+                            anniversaries. The Commodore’s Table provides dining services to corporate events at SHIP
+                            such as seminars, board meetings, conferences, workshops and trainings. Included in the product
+                            list of The Commodore’s Table are cookies, bars, cupcakes, breads, pastries and wedding cakes.
+                        </p>
+                        <div class="row clearfix">
+                            <div class="col-md-6 col-sm-6 col-xs-12">
+                                <div class="overflow-hidden">
+                                    <div class="team-building-image image-animation-background-image" style="background-image: url('http://res.cloudinary.com/dghq7v5cz/image/upload/c_scale,w_700/v1410863043/20130426_174951_hujp88.jpg')">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-6 col-sm-6 col-xs-12">
+                                <div class="overflow-hidden">
+                                    <div class="team-building-image image-animation-background-image" style="background-image: url('http://res.cloudinary.com/aestrea-software-development/image/upload/c_scale,w_700/v1406887001/SHIP/dining and events/Pastries_and_Cupcakes_2.jpg')">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row clearfix">
+                            <div class="col-md-6 col-sm-6 col-xs-12">
+                                <div class="overflow-hidden">
+                                    <div class="team-building-image image-animation-background-image" style="background-image: url('http://res.cloudinary.com/dghq7v5cz/image/upload/v1410168838/special_event_1_mlzdue.jpg')">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-6 col-sm-6 col-xs-12">
+                                <div class="overflow-hidden">
+                                    <div class="team-building-image image-animation-background-image" style="background-image: url('http://res.cloudinary.com/dghq7v5cz/image/upload/v1410160756/Buffet_picture_egzdym.jpg')">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <a href="contactUs.html" class="inquire-button pull-right btn btn-primary col-xs-12 col-md-3 col-sm-3">Inquire Now</a>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+</div>
+<input type="hidden" name="page-index" class="page-index" value="6" id="page-index" />

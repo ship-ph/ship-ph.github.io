@@ -1,0 +1,80 @@
+---
+layout: default
+permalink: /aboutus/
+---
+
+<div class="container container-margin">
+    <div class="row">
+        <div class="col-xs-12 breadcrumbs pull-right">
+            <ul class="breadcrumbs-list">
+                <li class="breadcrumbs-label">You are here:</li>
+                <li><a href="index.html">Home</a><i class="fa fa-angle-right"></i></li>
+                <li class="current">About us</li>
+            </ul>
+        </div>
+
+
+
+
+
+        <div class="col-lg-3 col-md-4" >
+            <div class="col-lg-12 gray-bg" id="assessmentButton">
+                <h3 class="left-h3">About us</h3>
+                <div class="panel-group" id="accordion">
+                    <div class="panel assessmentChoices">
+                        <a href="alumnus/showAboutUs.html" onclick="jQuery.ajax({type:'POST', url:'/alumnus/showAboutUs',success:function(data,textStatus){jQuery('#aboutUsDiv').html(data);},error:function(XMLHttpRequest,textStatus,errorThrown){}});return false;" class="assessment-button collapse-btn">
+                            <div class="panel-heading">
+                                About us
+                            </div>
+                        </a>
+                        <div id="aboutUsCollapse" class="collapse assessmentChoicesBackground"></div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+        <div class="col-lg-9 col-md-8">
+            <div id="aboutUsDiv">
+
+                <div class="gray-bg trainers-content-margin clearfix">
+                    <h3 class="left-h3">Ship Hotel Cruise Institute of the Philippines, Inc.</h3>
+                    <div class="col-md-12">
+                        <div class="row">
+                            <h2 class="col-md-12 text-center">The training center dedicated to Filipinos</h2>
+                            <div class="col-lg-7 col-md-12">
+                                <p><strong>SHIP</strong> was established in June 2002 and was envisioned to be the training center dedicated to Filipinos working in the hotel and catering departments of cruise ships as well as those who work in conventional commercial vessels. Ship’s main objectives are to train prospective seafarers for entry level positions and to provide upgrade courses for existing seafarers to make them more eligible for higher positions in the areas of cooking, dining, bartending and housekeeping. The courses are designed to meet TESDA competency based requirements and at the same time meet international cruise and merchant ships standards. The trainers are seafarers and hoteliers who are well experienced in their respective fields.</p>
+                            </div>
+                            <div class="col-lg-5 col-md-12">
+                                <img src="http://res.cloudinary.com/aestrea-software-development/image/upload/c_scale,w_700/v1409713672/SHIP/logo/DSC02044.jpg" class="img-responsive" alt="About Us">
+                            </div>
+                        </div>
+                        <hr class="hr-about">
+                        <div class="row">
+                            <h2 class="col-md-12 text-center">SHIP developed new courses</h2>
+                            <div class="col-lg-5 col-md-12">
+                                <img src="http://res.cloudinary.com/aestrea-software-development/image/upload/c_scale,w_700/v1402642037/SHIP/about/about2.jpg" class="img-responsive" alt="About Us">
+                            </div>
+                            <div class="col-lg-7 col-md-12">
+                                <p><strong>SHIP</strong> was originally designed to cater to top of the line cruise ship companies with high standards of food, service and hygiene such as Cunard, Seabourn, Crystal Cruises, NCL, SeaDream & Seachefs. However, realizing the needs of conventional ships and with encouragement from commercial ship owners, SHIP developed new courses which shall improve the culinary skills of Cooks working onboard bulk carriers, cargo ships, tankers, car ships and other commercial ships.</p>
+                            </div>
+
+                        </div>
+                        <hr class="hr-about">
+                        <div class="row">
+                            <h2 class="col-md-12 text-center">The design of the galley was conceptualized by a team of experts</h2>
+                            <div class="col-lg-7 col-md-12">
+                                <p>The highlights of the training center are two well equipped kitchens which replicate as closely as practicable the equipment used in hotels and onboard cruise and merchant ships. It has both hot and cold galley sections and a pastry section. The design of the galley was conceptualized by a team of experts in cruise ship galley operations who put their bright ideas into place. The experts painstakingly put every detail into the galley making it a galley simulator.</p>
+                            </div>
+                            <div class="col-lg-5 col-md-12">
+                                <img src="http://res.cloudinary.com/aestrea-software-development/image/upload/c_scale,w_700/v1402642026/SHIP/about/about3.jpg" class="img-responsive" alt="About Us">
+                            </div>
+                        </div>
+                        <hr class="hr-about">
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+</div>
