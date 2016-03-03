@@ -51,6 +51,15 @@
                     }
                 })
             });
+
+            if(getUrlParameter('url') != ""){
+                var content = "";
+                if($("#linkages-content").length)
+                    content = "#linkages-content";
+                else if($("#diningAndEvents").length)
+                    content = "#diningAndEvents";
+                jQuery.ajax({type:'GET', url: "/index/"+getUrlParameter('url'),success:function(data,textStatus){jQuery(content).html(data);},error:function(XMLHttpRequest,textStatus,errorThrown){}})
+            }
         </script>
     </body>
 

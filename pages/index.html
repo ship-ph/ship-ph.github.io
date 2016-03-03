@@ -66,12 +66,12 @@ permalink: /
         <div class="col-md-9">
             <h1>Why enroll at SHIP</h1>
             <p>SHIP was established in June 2002 and was envisioned to be the training center dedicated to Filipinos working in the hotel and catering departments of cruise ships as well as those who work in conventional commercial vessels.
-                <a href="aboutUs.html">Learn more</a>
+                <a href="/aboutus">Learn more</a>
             </p>
         </div>
         <div class="col-md-3">
 
-            <a href="courses.html">
+            <a href="/courses">
                 <button type="button" class="btn btn-primary transition-hover"><i class="fa fa-play-circle"></i> Inquire Now</button>
             </a>
 
@@ -83,59 +83,25 @@ permalink: /
     <div class="row row-ship gray-bg">
         <h3 class="left-h3">FEATURED COURSE</h3>
         <div class="featuredBox">
-
-            <a href="courses/Food_Safety_Cleaning_and_Sanitation.html">
+            {% assign courses = site.courses | sort:'rank' %}
+            {% assign counter=0 %}
+            {% for course in courses %}
+            {% if course.feature_image and counter < 4 %}
+            {% assign counter=counter | plus:1 %}
+            <a href="{{ course.url }}">
                 <div class="col-md-3 col-sm-12 padding-mobile">
                     <div class="featuredImage">
 
-                        <img class="img-responsive img-thumbnail" src="image/displayImage/14.html"/>
+                        <img class="img-responsive img-thumbnail" src="{{ course.feature_image }}"/>
 
                     </div>
                     <div class="featuredName">
-                        <h4>Food Safety Cleaning and Sanitation</h4>
+                        <h4>{{ course.title }}</h4>
                     </div>
                 </div>
             </a>
-
-            <a href="courses/Ship%27s_Catering_Services_NCII.html">
-                <div class="col-md-3 col-sm-12 padding-mobile">
-                    <div class="featuredImage">
-
-                        <img class="img-responsive img-thumbnail" src="image/displayImage/15.html"/>
-
-                    </div>
-                    <div class="featuredName">
-                        <h4>Ship's Catering Services NCII</h4>
-                    </div>
-                </div>
-            </a>
-
-            <a href="courses/Bread_%26_Pastry_Production_NCII.html">
-                <div class="col-md-3 col-sm-12 padding-mobile">
-                    <div class="featuredImage">
-
-                        <img class="img-responsive img-thumbnail" src="image/displayImage/17.html"/>
-
-                    </div>
-                    <div class="featuredName">
-                        <h4>Bread & Pastry Production NCII</h4>
-                    </div>
-                </div>
-            </a>
-
-            <a href="courses/Victual_Management.html">
-                <div class="col-md-3 col-sm-12 padding-mobile">
-                    <div class="featuredImage">
-
-                        <img class="img-responsive img-thumbnail" src="http://res.cloudinary.com/aestrea-software-development/image/upload/c_scale,h_250/v1402638345/SHIP/shared/default-image.png" />
-
-                    </div>
-                    <div class="featuredName">
-                        <h4>Victual Management</h4>
-                    </div>
-                </div>
-            </a>
-
+            {% endif %}
+            {% endfor %}
         </div>
     </div>
 
@@ -154,10 +120,10 @@ permalink: /
     </div>
     <div class="row row-ship gray-bg" id="quick-links">
         <h3 class="left-h3">QUICK LINKS</h3>
-        <a href="industryLinkages/marlins.html" class="text-decoration-none"><p class="btn btn-default btn-block transition-hover">Marlins</p></a>
-        <a href="services/teamBuilding.html" class="text-decoration-none"><p class="btn btn-default btn-block transition-hover">Corporate Culinary Team Building</p></a>
-        <a href="accreditation.html" class="text-decoration-none"><p class="btn btn-default btn-block transition-hover">Accreditation</p></a>
-        <a href="aboutUs.html" class="text-decoration-none"><p class="btn btn-default btn-block transition-hover">About Us</p></a>
+        <a href="/industrylinkages/?url=showMarlins" class="text-decoration-none"><p class="btn btn-default btn-block transition-hover">Marlins</p></a>
+        <a href="/services/?url=showTeamBuilding" class="text-decoration-none"><p class="btn btn-default btn-block transition-hover">Corporate Culinary Team Building</p></a>
+        <a href="/accreditation" class="text-decoration-none"><p class="btn btn-default btn-block transition-hover">Accreditation</p></a>
+        <a href="/aboutus" class="text-decoration-none"><p class="btn btn-default btn-block transition-hover">About Us</p></a>
         <a href="trainers/inhouse_trainers.html" class="text-decoration-none"><p class="btn btn-default btn-block transition-hover">In-house Trainers</p></a>
     </div>
     <div class="clearfix"></div>

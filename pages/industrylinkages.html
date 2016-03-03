@@ -17,7 +17,7 @@ permalink: /industrylinkages/
                 <h3 class="left-h3">Industry Linkages</h3>
                 <div class="panel-group" id="accordion">
                     <div class="panel assessmentChoices">
-                        <a href="index/showSingaShip.html" onclick="jQuery.ajax({type:'POST', url:'/index/showSingaShip',success:function(data,textStatus){jQuery('#linkages-content').html(data);},error:function(XMLHttpRequest,textStatus,errorThrown){}});return false;">
+                        <a href="index/showSingaShip.html" onclick="jQuery.ajax({type:'GET', url:'/index/showSingaShip',success:function(data,textStatus){jQuery('#linkages-content').html(data);},error:function(XMLHttpRequest,textStatus,errorThrown){}});return false;">
                             <div class="panel-heading">
                                 Singa Ship Management Phils., Inc. (SSMPI)
                             </div>
@@ -25,7 +25,7 @@ permalink: /industrylinkages/
                         <div id="singaShip-Collapse" class="collapse assessmentChoicesBackground"></div>
                     </div>
                     <div class="panel assessmentChoices">
-                        <a href="index/showMsm.html" onclick="jQuery.ajax({type:'POST', url:'/index/showMsm',success:function(data,textStatus){jQuery('#linkages-content').html(data);},error:function(XMLHttpRequest,textStatus,errorThrown){}});return false;">
+                        <a href="index/showMsm.html" onclick="jQuery.ajax({type:'GET', url:'/index/showMsm',success:function(data,textStatus){jQuery('#linkages-content').html(data);},error:function(XMLHttpRequest,textStatus,errorThrown){}});return false;">
                             <div class="panel-heading">
                                 Multinational Ship Management
                             </div>
@@ -34,7 +34,7 @@ permalink: /industrylinkages/
                     </div>
 
                     <div class="panel assessmentChoices">
-                        <a href="index/showLaiya.html" onclick="jQuery.ajax({type:'POST', url:'/index/showLaiya',success:function(data,textStatus){jQuery('#linkages-content').html(data);},error:function(XMLHttpRequest,textStatus,errorThrown){}});return false;">
+                        <a href="index/showLaiya.html" onclick="jQuery.ajax({type:'GET', url:'/index/showLaiya',success:function(data,textStatus){jQuery('#linkages-content').html(data);},error:function(XMLHttpRequest,textStatus,errorThrown){}});return false;">
                             <div class="panel-heading">
                                 Laiya Coco Grove
                             </div>
@@ -42,7 +42,7 @@ permalink: /industrylinkages/
                         <div id="laiya-coco-collapse" class="collapse assessmentChoicesBackground"></div>
                     </div>
                     <div class="panel assessmentChoices">
-                        <a href="index/showToGo.html" onclick="jQuery.ajax({type:'POST', url:'/index/showToGo',success:function(data,textStatus){jQuery('#linkages-content').html(data);},error:function(XMLHttpRequest,textStatus,errorThrown){}});return false;">
+                        <a href="index/showToGo.html" onclick="jQuery.ajax({type:'GET', url:'/index/showToGo',success:function(data,textStatus){jQuery('#linkages-content').html(data);},error:function(XMLHttpRequest,textStatus,errorThrown){}});return false;">
                             <div class="panel-heading">
                                 2GO Negros Navigation
                             </div>
@@ -50,7 +50,7 @@ permalink: /industrylinkages/
                         <div id="togo-collapse" class="collapse assessmentChoicesBackground"></div>
                     </div>
                     <div class="panel assessmentChoices">
-                        <a href="index/showMarlins.html" onclick="jQuery.ajax({type:'POST', url:'/index/showMarlins',success:function(data,textStatus){jQuery('#linkages-content').html(data);},error:function(XMLHttpRequest,textStatus,errorThrown){}});return false;">
+                        <a href="index/showMarlins.html" onclick="jQuery.ajax({type:'GET', url:'/index/showMarlins',success:function(data,textStatus){jQuery('#linkages-content').html(data);},error:function(XMLHttpRequest,textStatus,errorThrown){}});return false;">
                             <div class="panel-heading">
                                 Marlins
                             </div>
@@ -58,7 +58,7 @@ permalink: /industrylinkages/
                         <div id="marlins-collapse" class="collapse assessmentChoicesBackground"></div>
                     </div>
                     <div class="panel assessmentChoices">
-                        <a href="index/showOwwa.html" onclick="jQuery.ajax({type:'POST', url:'/index/showOwwa',success:function(data,textStatus){jQuery('#linkages-content').html(data);},error:function(XMLHttpRequest,textStatus,errorThrown){}});return false;">
+                        <a href="index/showOwwa.html" onclick="jQuery.ajax({type:'GET', url:'/index/showOwwa',success:function(data,textStatus){jQuery('#linkages-content').html(data);},error:function(XMLHttpRequest,textStatus,errorThrown){}});return false;">
                             <div class="panel-heading">
                                 OWWA SCHOLARSHIP
                             </div>
@@ -101,4 +101,4 @@ permalink: /industrylinkages/
             </div>
         </div>
     </div>
-</div>
+</div><input type="hidden" name="page-index" class="page-index" value="8" id="page-index" />

@@ -17,7 +17,7 @@ permalink: /services/
                 <h3 class="left-h3">SERVICES</h3>
                 <div class="panel-group" id="accordion">
                     <div class="panel servicesChoices">
-                        <a href="index/showCommodoresTable.html" onclick="jQuery.ajax({type:'POST', url:'/index/showCommodoresTable',success:function(data,textStatus){jQuery('#diningAndEvents').html(data);},error:function(XMLHttpRequest,textStatus,errorThrown){}});return false;" class="services-button collapse-btn">
+                        <a href="index/showCommodoresTable.html" onclick="jQuery.ajax({type:'GET', url:'/index/showCommodoresTable',success:function(data,textStatus){jQuery('#diningAndEvents').html(data);},error:function(XMLHttpRequest,textStatus,errorThrown){}});return false;" class="services-button collapse-btn">
                             <div class="panel-heading">
                                 The Commodore’s Table
                             </div>
@@ -26,7 +26,7 @@ permalink: /services/
                     </div>
 
                     <div class="panel servicesChoices">
-                        <a href="index/showTeamBuilding.html" onclick="jQuery.ajax({type:'POST', url:'/index/showTeamBuilding',success:function(data,textStatus){jQuery('#diningAndEvents').html(data);},error:function(XMLHttpRequest,textStatus,errorThrown){}});return false;" class="services-button collapse-btn">
+                        <a href="index/showTeamBuilding.html" onclick="jQuery.ajax({type:'GET', url:'/index/showTeamBuilding',success:function(data,textStatus){jQuery('#diningAndEvents').html(data);},error:function(XMLHttpRequest,textStatus,errorThrown){}});return false;" class="services-button collapse-btn">
                             <div class="panel-heading">
                                 Corporate Culinary Team Building
                             </div>
@@ -80,7 +80,7 @@ permalink: /services/
                                 </div>
                             </div>
                         </div>
-                        <a href="contactUs.html" class="inquire-button pull-right btn btn-primary col-xs-12 col-md-3 col-sm-3">Inquire Now</a>
+                        <a href="/contactus" class="inquire-button pull-right btn btn-primary col-xs-12 col-md-3 col-sm-3">Inquire Now</a>
                     </div>
                 </div>
 
