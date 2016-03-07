@@ -1,0 +1,33 @@
+---
+layout: one-container
+---
+
+<div class="row">
+    <div class="col-lg-5 col-md-5 col-sm-5">
+        <div class="row">
+            <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 trainer-img-container">
+
+                <a href="{{ page.image }}" class="fresco">
+                    <img class="img-responsive margin-auto" src="{{ page.image }}"/>
+                </a>
+
+            </div>
+        </div>
+    </div>
+    <div class="col-lg-7 col-md-7 col-sm-7">
+        <h3 class="text-center-sm">{{ page.title }}</h3>
+
+
+        <h4><span id="description-label" class="property-label">About</span>: </h4>
+        <p>{{ page.about }}</p>
+
+
+            <h4><span id="achievements-label" class="property-label">Trainings and Certifications</span>: </h4>
+
+            {{ content }}
+
+    </div>
+    <form action="http://ship-app.aestrea.com/trainer/index" method="post" class="pull-right clearfix trainers-controls" >
+        <a href="/trainers/?url=trainer/showInhouseTrainers" class="btn btn-default">Trainers List</a>
+    </form>
+</div>

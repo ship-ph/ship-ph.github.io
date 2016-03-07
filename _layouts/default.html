@@ -58,6 +58,8 @@
                     content = "#linkages-content";
                 else if($("#diningAndEvents").length)
                     content = "#diningAndEvents";
+                else if($("#trainers").length)
+                    content = "#trainers";
                 jQuery.ajax({type:'GET', url: "/index/"+getUrlParameter('url'),success:function(data,textStatus){jQuery(content).html(data);},error:function(XMLHttpRequest,textStatus,errorThrown){}})
             }
         </script>

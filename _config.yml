@@ -12,3 +12,6 @@ collections:
     courses:
         output: true
         permalink: /courses/:categories/:title
+    inhouse-trainers:
+        output: true
+        permalink: /inhouse_trainers/:title
