@@ -1,0 +1,43 @@
+---
+layout: one-container
+---
+
+<div class="row">
+    <div class="col-md-5 text-center">
+
+        <div id="image-carousel" class="carousel slide" data-ride="carousel" data-interval="false">
+            <!-- Wrapper for slides -->
+            <div class="carousel-inner">
+                {% for image in page.article-images %}
+                <div class="item{% if forloop.index == 1 %} active{% endif %}">
+                    <img class="img-responsive margin-auto" src="{{ image }}"/>
+                </div>
+                {% endfor %}
+            </div>
+
+            <h5>14 Images</h5>
+            <div class="clearfix"></div>
+            <!-- Controls -->
+            <a class="btn btn-primary" href="#image-carousel" data-slide="prev">
+                <span class="glyphicon glyphicon-chevron-left"></span>
+            </a>
+            <a class="btn btn-primary" href="#image-carousel" data-slide="next">
+                <span class="glyphicon glyphicon-chevron-right"></span>
+            </a>
+
+        </div>
+
+    </div>
+    <div class="col-md-7">
+
+        <h3>{{ page.title }}</h3>
+
+        <h5>{{ page.date | date: "%B %-d, %Y" }}</h5>
+
+        <i class="fa fa-twitter"></i> <i class="fa fa-facebook"></i>
+        <hr>
+
+        {{ content }}
+
+    </div>
+</div>
