@@ -131,25 +131,24 @@ permalink: /
 
     <div class="row row-ship gray-bg">
         <h3 class="left-h3">NEWS</h3>
-
+        {% for news in site.posts | limit:3 %}
         <div class="row row-ship">
             <div class="col-md-2 clearfix">
-                <a href="news/Christmas_Goodies-102.html" class="read-more">
+                <a href="{{ news.url }}" class="read-more">
 
-                    <img class="home-news-image img-responsive img-thumbnail margin-auto" src="image/displayImage/175.html"/>
+                    <img class="home-news-image img-responsive img-thumbnail margin-auto" src="{{ news.article-images[0] }}"/>
 
                 </a>
             </div>
             <div class="col-md-10 padding-mobile">
-                <h4 class="news-title">Christmas Goodies</h4>
+                <h4 class="news-title">{{ news.title }}</h4>
                 <div class="news-date">
-                    <span class="date-posted"><i class="fa fa-calendar-o"></i> October 22, 2014</span>
+                    <span class="date-posted"><i class="fa fa-calendar-o"></i> {{ news.date | date: "%B %-d, %Y" }}</span>
 
                 </div>
                 <p class="news-content news-preview">
 
-                <p>SUGAR and SPICE makes Christmas nice! Welcome to Ship&#39;s. BROWN SUGAR cakes, pastries and more. Christmas is here once again and we would like to help you in selecting your gifts for Christmas. Just choose from our christmas goodies that you wi
-
+                    {{ news.excerpt }}
                 </p>
                 <a href="news/Christmas_Goodies-102.html" class="read-more">
                     Read more
@@ -159,63 +158,7 @@ permalink: /
             <div class="clearfix"></div>
             <hr>
         </div>
-
-        <div class="row row-ship">
-            <div class="col-md-2 clearfix">
-                <a href="news/Bartender%e2%80%99s_Mixology_Workshop_September_8_%e2%80%93_13%2c_2014-3.html" class="read-more">
-
-                    <img class="home-news-image img-responsive img-thumbnail margin-auto" src="image/displayImage/5.html"/>
-
-                </a>
-            </div>
-            <div class="col-md-10 padding-mobile">
-                <h4 class="news-title">Bartender’s Mixology Workshop September 8 – 13, 2014</h4>
-                <div class="news-date">
-                    <span class="date-posted"><i class="fa fa-calendar-o"></i> September 23, 2014</span>
-
-                </div>
-                <p class="news-content news-preview">
-
-                    Windstar Cruises BLD Stewards Noel Isaac, Sammy Lachica, Kennedy Latosa, Rhone Soriano, Ivy Red Mendoza and GPA Deckboys Sammy Fernandez and Eduardo Chan successfully completed the Bartenders’ Mixology Workshop under the tutelage of a team of trainer
-
-                </p>
-                <a href="news/Bartender%e2%80%99s_Mixology_Workshop_September_8_%e2%80%93_13%2c_2014-3.html" class="read-more">
-                    Read more
-                    <i class="fa fa-chevron-right"></i>
-                </a>
-            </div>
-            <div class="clearfix"></div>
-            <hr>
-        </div>
-
-        <div class="row row-ship">
-            <div class="col-md-2 clearfix">
-                <a href="news/Carnival_UK_Resourcing_Team_conducted_test_cooking_at_SHIP_July_24-25%2c_2014-2.html" class="read-more">
-
-                    <img class="home-news-image img-responsive img-thumbnail margin-auto" src="image/displayImage/3.html"/>
-
-                </a>
-            </div>
-            <div class="col-md-10 padding-mobile">
-                <h4 class="news-title">Carnival UK Resourcing Team conducted test cooking at SHIP July 24-25, 2014</h4>
-                <div class="news-date">
-                    <span class="date-posted"><i class="fa fa-calendar-o"></i> September 23, 2014</span>
-
-                </div>
-                <p class="news-content news-preview">
-
-                    Sam James–Resourcing Manager Fleet, Laura Collins–Resourcing Advisor, Mark Oldroyd– Corporate Executive Chef and Avelino Avelino Chef de Partie visited Manila and conducted test cooking at the cruise galley.
-
-                </p>
-                <a href="news/Carnival_UK_Resourcing_Team_conducted_test_cooking_at_SHIP_July_24-25%2c_2014-2.html" class="read-more">
-                    Read more
-                    <i class="fa fa-chevron-right"></i>
-                </a>
-            </div>
-            <div class="clearfix"></div>
-            <hr>
-        </div>
-
+        {% endfor %}
     </div>
 
 
