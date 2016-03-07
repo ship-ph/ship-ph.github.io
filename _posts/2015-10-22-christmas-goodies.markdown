@@ -1,6 +1,6 @@
 ---
 layout: news
-title:  "Welcome to Jekyll!"
+title:  "Christmas Goodies"
 date:   2015-10-22 03:49:55 +0800
 article-images:
   - /image/displayImage/175.html
