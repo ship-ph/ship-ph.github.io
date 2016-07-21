@@ -58,45 +58,6 @@ title: courses
             </div>
         </div>
 
-        <div class="gray-bg clearfix" id="modularEnhancementCoursesTemplate">
-            <div>
-                <h3 class="left-h3">
-                    Modular Enhancement Courses For Cooks / Chefs
-                </h3>
-                <p>This modular enhancement course is designed for MLC Certified Cooks to build on their foundations in food preparation and production. It includes a more in-depth study of cooking principles and techniques. The trainees will have intensive lectures and practical activities in recipes comprehension, menu planning and nutrition, victual management, and in-depth cooking practices. Trainees can enroll one module at a time and can receive a training completion certificate after each module.</p>
-            </div>
-            <div id="list-course-modular" class="content scaffold-list" role="main">
-
-
-                <div class="course-table-scroll">
-                    <table class="course-table table table-condensed table-bordered">
-                        <thead>
-                        <th class="td-checkbox-center">Select</th>
-                        <th>Name</th>
-
-                        </thead>
-                        <tbody>
-                        {% assign courses = site.courses | sort: 'rank' %}
-                        {% for course in courses %}
-                        {% if course.categories contains 'enhancement' %}
-                        <tr>
-                            <td class="td-checkbox-center">
-                                <input type="checkbox" name="courses" value="{{ course.title | url_encode}}" class="checkbox-course" id="checkbox-course"  />
-                            </td>
-                            <td><a href="{{ course.url }}" class="text-decoration-none course-item">{{ course.title }}</a></td>
-                        </tr>
-                        {% endif %}
-                        {% endfor %}
-                        </tbody>
-                    </table>
-                </div>
-                <button type="submit" id="save_value" class="margin-10 pull-right btn  btn-success">
-                    Inquire Courses
-                </button>
-                <h5>*Check course box to select</h5>
-            </div>
-        </div>
-
 
     </form>
 </div>
