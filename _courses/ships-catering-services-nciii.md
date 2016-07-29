@@ -14,3 +14,8 @@ Trainee Entry Requirements
 * Must have at least 3 months relevant sea service or/ graduate of Bachelor of Science in Hotel & Restaurant Management (BSHRM) OR
 * Can communicate in basic oral and written English
 * Must be physically and mentally fit to undergo Ship’s Catering NCIII (Ship’s Cooks) the training program
+ 
+Full Core Competencies - 80 hours / 10 days
+As a requirement for assessment: Prepare Nutritionally-and-Health-Balanced Calendar Menu and Supervise/Administer Galley Area - 3 days
+
+Please call us up for the schedule and training fee
