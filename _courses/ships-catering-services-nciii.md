@@ -13,3 +13,4 @@ Trainee Entry Requirements
 * Course handout will be provided
 * Schedule: Monday to Friday and Monday, 8:00 am to 5:00 pm for 6 days
 * Monday to Friday, 8:00 am to 5:00 pm.
+* Blah Blah Blah
