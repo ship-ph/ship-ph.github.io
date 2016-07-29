@@ -1,9 +1,9 @@
 ---
 layout: course
 rank: 5
-title: "SHIP'S CATERING SERVICES NCI"
+title: "Ships' Catering NCIII (Ships' Cooks)"
 categories: training
-tvet: "WTR201413051018"
+tvet: "WTR201613053129"
 feature_image: /image/displayImage/16.html
 ---
 
