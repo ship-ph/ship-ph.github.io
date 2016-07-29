@@ -11,7 +11,8 @@ Trainee Entry Requirements
 * Must be High School Graduate
 * Must have completed BT and SSA/SDSD Training
 * Must have at least 3 months relevant sea service or/ graduate of Bachelor of Science in Hotel & Restaurant Management (BSHRM) OR
-  * Completed prescribed culinary related course such as Commercial Cooking NCII, Cookery NCII, Commercial Cooking NCIII, * * Ship’s Catering Services NCII and Bread and Pastry Production NCII OR
+  * Completed prescribed culinary related course such as Commercial Cooking NCII, Cookery NCII, Commercial Cooking NCIII, 
+  * Ship’s Catering Services NCII and Bread and Pastry Production NCII OR
   * Work as cook / assistant cook in hotel or restaurant for at least one year as evidenced with an Employment Certificate OR
   * Holder of TESDA National Certificate for Commercial Cooking NCII or Cookery NCII or Commercial Cooking NCIII or Ship’s Catering Services NCII or Bread and Pastry Production NCII
 * Can communicate in basic oral and written English
