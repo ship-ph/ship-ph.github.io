@@ -3,9 +3,10 @@ layout: course
 rank: 7
 title: "SHIP'S CATERING NCIII(Ship's Cooks) WTR201613053129"
 categories: training
-tvet: "WTR201413052142"
+tvet: "WTR201613053129"
 feature_image: /image/displayImage/17.html
 ---
+
 Trainee Entry Requirements
 * Must be High School Graduate
 * Must have completed BT and SSA/SDSD Training
@@ -18,4 +19,5 @@ Trainee Entry Requirements
 
 Full Core Competencies - 80 hours / 10 days
 As a requirement for assessment: Prepare Nutritionally-and-Health-Balanced Calendar Menu and Supervise/Administer Galley Area - 3 days
+
 Please call us up for the schedule and training fee
