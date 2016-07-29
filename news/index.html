@@ -3,30 +3,5 @@ layout: one-container
 title: NEWS AND UPDATES
 permalink: /news/
 ---
-{% for news in paginator.posts %}
-<div class="mix news-thumbnail news102 October-2014 recent-news">
-    <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
-        <div class="news-thumbnail">
 
-            <img class="img-responsive margin-auto" src="{{ news.article-images[0] }}"/>
-
-        </div>
-    </div>
-    <div class="col-lg-8 col-md-8 col-sm-8 col-xs-12">
-        <a href="{{ news.url }}" class="text-decoration-none">
-            <h3>{{ news.title }}</h3>
-        </a>
-        <div class="news-date">
-            <span class="date-posted"><i class="fa fa-calendar-o"></i> {{ news.date | date: "%B %-d, %Y" }}</span>
-
-        </div>
-        <div class="news-content">
-            {{ news.excerpt }}
-        </div>
-    </div>
-    <div class="clearfix"></div>
-    <hr>
-</div>
-{% endfor %}
-
-<input type="hidden" name="page-index" class="page-index" value="7" id="page-index" />
+<h3>Watch out for News and Updates</h3>
