@@ -9,8 +9,8 @@ feature_image: /image/displayImage/16.html
 
 Trainee Entry Requirements
 
-* Six days lecture discussion and hands – on
-* Course handout will be provided
-* Schedule: Monday to Friday and Monday, 8:00 am to 5:00 pm for 6 days
-* Monday to Friday, 8:00 am to 5:00 pm.
-* Blah Blah Blah
+* Must be High School Graduate
+* Must have completed BT and SSA/SDSD Training
+* Must have at least 3 months relevant sea service or/ graduate of Bachelor of Science in Hotel & Restaurant Management (BSHRM) OR
+* Can communicate in basic oral and written English
+* Must be physically and mentally fit to undergo Ship’s Catering NCIII (Ship’s Cooks) the training program
