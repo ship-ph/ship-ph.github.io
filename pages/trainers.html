@@ -4,7 +4,7 @@ permalink: /trainers/
 title: Trainers
 ---
 
-<div class="col-lg-9 col-md-8">
+<div class="col-lg-push-2 col-lg-9 col-md-8">
     <div class="col-lg-12 Container-2">
         <div id="trainers" class="trainers-template">
 
@@ -17,7 +17,35 @@ title: Trainers
                     Our pool of trainers consist of regular in-house and vacationing crew who have extensive experience onboard cruise ships as CDP and Sous Chefs, Head Bakers and Pastry Chefs, Butlers, Stewards and Stewardesses and onboard merchant ships as Chief Cooks and Catering Superintendent. These trainers are in a unique position to impart their knowledge based on actual working environment on board.</p>
                 <p class="trainers-overview-text">
                     SHIP Trainers have been issued NCII Certificates and National TVET Trainer Certificate by TESDA (Technical Vocational Skills Development Authority of the Philippines). All trainers underwent a “Train the Trainer” program to make them well equipped in the principles of effective communication, methods of training, art of questioning, making and using training aids, planning and delivering a presentation and evaluating training.</p>
+
+
+                    <div>
+                        <div class="row">
+                            {% assign trainers = site.inhouse-trainers | sort:'image' %}
+                            {% for trainer in trainers %}
+                            <div class="col-lg-6 col-md-6 chef-container-space">
+                                <div class="in-training-image-container">
+                                    <span class="helper"></span>
+
+                                    <a href="{{ trainer.url }}">
+                                        <img class="img-responsive thumbnail zoom" src="{{ trainer.image }}" />
+                                    </a>
+
+                                </div>
+                                <div >
+                                    <a href="{{ trainer.url }}" class="text-decoration-none">
+                                        <h4 class="chef-name"><strong>{{ trainer.title }}</strong></h4>
+                                    </a>
+                                </div>
+                            </div>
+                            {% endfor %}
+                        </div>
+                    </div>
+
+
             </div>
+
+
 
         </div>
     </div>
